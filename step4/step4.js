@@ -38,4 +38,3 @@ var requestOptions = {
 function printHTML(html){
   console.log(content);
 }
-getHTML(requestOptions, printHTML);
