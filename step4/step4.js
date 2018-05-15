@@ -6,16 +6,8 @@ var https = require('https');
 // particular resource (like '/login/index.html'), that would be defined in the path
 
 
-function getAndPrintHTML (options, callback) {
+function getHTML (options, callback) {
     
-//    var requestOptions = {
-//     host: host,
-//     path: path
-//     }
-//     var host = requestOptions.host;
-//     var path = requestOptions.path;
-//   return options = (host, path)
-// };
   // notice that https.get takes a callback with one parameter -
   // response, which is a Stream that represents the HTTP response
   https.get(options, function (response) {
@@ -43,7 +35,7 @@ var requestOptions = {
   host: 'sytantris.github.io',
   path: '/http-examples/step2.html'
 };
-function displayContent(content){
+function printHTML(html){
   console.log(content);
 }
-getAndPrintHTML(requestOptions, displayContent);
+getHTML(requestOptions, printHTML);
