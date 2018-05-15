@@ -6,7 +6,7 @@ var https = require('https');
 // particular resource (like '/login/index.html'), that would be defined in the path
 
 
-function getAndPrintHTMLChunks () {
+function getAndPrintHTML() {
 
   var requestOptions = {
     host: 'sytantris.github.io',
@@ -35,4 +35,4 @@ function getAndPrintHTMLChunks () {
   });
 
 }
-getAndPrintHTMLChunks()
+getAndPrintHTML()
